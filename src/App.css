@@ -1,0 +1,249 @@
+@import "~antd/dist/antd.css";
+
+@primary-color: #227700;
+
+#siamkan{
+	font-family: siamkan;
+	font-size: 2em;
+}
+
+#siamkan-med{
+	font-family: siamkan;
+	font-size: 3em;
+}
+
+#siamkan-big{
+	font-family: siamkan;
+	font-size: 4em;
+}
+
+#handpointer{
+	cursor: pointer;
+}
+
+#handpointer-lesson{
+	cursor: pointer;
+	background-color: #eeffee;
+	padding: 0px;
+	border-radius: 10px;
+	border: 2px solid #007700;
+	
+}
+
+
+#lessonlistbg{
+	background-image: url(Siamkan_Food.png);
+	/*width: ; height: 100vh;*/
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.fade-in {
+  animation: fadeIn ease-out 1s;
+	animation-delay: 2s;
+  -webkit-animation: fadeIn ease-out 1s;
+  -moz-animation: fadeIn ease-out 1s;
+  -o-animation: fadeIn ease-out 1s;
+  -ms-animation: fadeIn ease-out 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+	
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+	}
+}
+
+.ant-btn-primary {
+	background-color: #990000;
+	background: #227700;
+	border-color: #000000;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+	background-color: #227700;
+	border-color: #000000;
+}
+
+.ant-steps-progress-icon .ant-progress-inner .ant-progress-circle {
+	background-color: #227700;
+	
+}
+
+.hide {
+  /*display: none;*/
+	color: transparent;
+}
+
+.howToSay:hover + .hide {
+  display: block;
+  color: green;
+	font-weight: bold;
+}
+
+
+/*
+.ant-steps-item-container .ant-steps-item-icon{
+	color: #000066;
+	background: #000066;
+}
+*/
+.ant-steps-item-icon {
+	color: #227700;
+	background: #660000;
+	font-size: 12px;
+	font-weight: bold;
+	
+	
+}
+
+/*
+.ant-btn:hover{
+	.ant-btn-circle::before, .ant-btn-circle::after {
+		background: #990000;
+		color: #990000;
+	}
+	
+}
+
+.ant-btn {
+	.ant-btn-circle::hover {
+		background: #990000;
+		color: #990000;
+	}
+	::after{
+		background: #990000;
+		color: #990000;
+	}
+	::selection{
+		background: #990000;
+		color: #990000;
+	}
+}
+
+.ant-menu-submenu-title:hover {
+    .ant-menu-submenu-arrow::before, .ant-menu-submenu-arrow::after {
+        background: red!important;
+    }
+}
+*/
+.ant-steps-icon {
+	
+}
+/*
+.ant-steps-item-icon .ant-steps-icon{
+	background-color: #ff0066;
+	color: #ff5500;
+	border-color: #ff0000;
+	background: #555500;
+}
+*/
+
+.ant-steps-item-tail {
+	border-color: #ff99ff;
+}
+
+/* finished step border color */
+.ant-steps-item-finish .ant-steps-item-icon {
+	border-color: #eeeeee;
+	background-color: #88cc88;
+	color: #990000;
+}
+
+.ant-steps-item-active {
+	color: #ff0000;
+}
+
+.ant-steps-item-finish .ant-steps-item-container .ant-steps-item-tail ::after {
+	/*background: #9999ff;*/
+	background-color: #ffff00;
+}
+
+/* font color of step */
+.ant-steps-item-process .ant-steps-item-container .ant-steps-item-icon .ant-steps-icon {
+	color: #ffffff;
+	/*border-color: #ff0000;*/
+}
+
+.ant-steps-item-finish .ant-steps-item-icon .ant-steps-icon {
+	color: #ffffff;
+}
+
+/* step border color*/
+.ant-steps-item-process .ant-steps-item-icon {
+	border-color: #004400;
+}
+
+.ant-steps-item-process .ant-steps-item-container .ant-steps-item-icon {
+	background: #227700;
+}
+
+.ant-steps-item .ant-steps-item-process .ant-steps-item-active {
+	background-color: #ff7700;
+	color: #000099;
+	background: #ff8800;
+}
+
+.ant-avatar-lg {
+	width: 60px;
+	height: 60px;
+}
+
+.ant-list-split .ant-list-item {
+	border-bottom: 2px dotted #ffffff;
+	
+}
+/*
+.ant-list-item-meta-title .ant-list-item-meta-title-active {
+	border-color: #ff0000;
+	background-color: #eeee00;
+	color: #ff0000;
+	background: #004400;
+	font: "#363636";
+}
+*/
+
+/*
+.ant-progress  .ant-progress-circle {
+	color: #009900;
+}
+*/
