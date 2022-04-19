@@ -28,7 +28,7 @@ import { LessonListData } from "../LessonListData";
 
 import { useSpring, animated } from 'react-spring';
 
-import click from '../sfx/click.mp3';
+//import click from '../sfx/click.mp3';
 
 import useSound from 'use-sound';
 
@@ -39,13 +39,13 @@ import useSound from 'use-sound';
 import '../App.css';
 
 function importAll(r) {
-  let images = [];
-  r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
-  return images;
+  let items = [];
+  r.keys().map((item, index) => { items[item.replace('./', '')] = r(item); });
+  return items;
 }
 const images = importAll(require.context('../images', false, /\.(png|jpe?g|svg)$/));
 
-const sounds = importAll(require.context('../sfx', false, /\.(mp3|ogg|mpeg)$/));
+const sounds = importAll(require.context('../audio/speech', false, /\.(mp3|ogg|mpeg)$/));
 
 function shuffleArray(array_) {
    for (var i = array_.length - 1; i > 0; i--) {
@@ -317,11 +317,25 @@ const GameTypeB = ({ gameBState, lessonProgress, success=0, prevProgress, getHea
 	//let h = winState.health;
 	//setWinState({score: s, health: h});
 	//console.log(winState);
-	console.log(sounds);
+	//console.log(sounds);
 	
 	
 	
-	var [play] = useSound(click);
+	//var [play] = useSound(click);
+	const [speak, setSpeak] = useState('');
+	
+	const [play] = useSound(sounds[speak]);
+	
+/*<Button 
+	className="howToSay" shape="circle" icon={<SoundTwoTone twoToneColor="#779900" />} 
+	onClick={() => {
+		//console.log("hello");
+		//let soundfile = './audio/speech/click.mp3';
+		//let [play] = useSound('./audio/speech/click.mp3');
+		//let [play] = useSound(sounds['click']);
+		//play();
+	}}
+/>*/
 	
 	//const playSound = (filename) => {
 	//	[play] = useSound(filename);
@@ -412,6 +426,7 @@ const GameTypeB = ({ gameBState, lessonProgress, success=0, prevProgress, getHea
 														style={{background: "#eeffee", left: "20px", top: "25px"}}
 														shape="circle" 
 														icon={<SoundTwoTone twoToneColor="#229900" style={{ transform: "scaleX(-1)"/*backgroundColor: "#000000"/**/}}/>} 
+														onMouseDown={() => { setSpeak(convoState.audio[i]); }}
 														onClick={play}
 													/>
 													</a>
@@ -441,8 +456,8 @@ const GameTypeB = ({ gameBState, lessonProgress, success=0, prevProgress, getHea
 														style={{background: "#eeffee", right: "20px", top: "25px"}}
 														shape="circle" 
 														icon={<SoundTwoTone twoToneColor="#229900" style={{/*backgroundColor: "#000000"/**/}}/>} 
+														onMouseDown={() => { setSpeak(convoState.audio[i]); }}
 														onClick={play}
-														//onClick={playSound(sounds[convoState.sound])}
 													/>
 														{i == convoState.speakers.length-1 && correctState == "written" ? "  " : convoState.written[i]}
 													</a>

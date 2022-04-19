@@ -12,8 +12,8 @@ import './App.css';
 const App = () => {
 	
 	//first value is current state, second is the function used to update it
-	const [ currState, setState ] = useState("state-userlogin"); 
-	//const [ currState, setState ] = useState("state-lessonlist"); 
+	//const [ currState, setState ] = useState("state-userlogin"); 
+	const [ currState, setState ] = useState("state-lessonlist"); 
 	//const [ currState, setState ] = useState("state-gametypeA"); 
 	//const [ currState, setState ] = useState("state-vocabulary");
 	//const [ currState, setState ] = useState("state-lecture"); 

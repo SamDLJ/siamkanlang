@@ -202,8 +202,9 @@ const GameTypeA = ({ gameAState, lessonProgress, success=0, prevProgress, getHea
 				showWritten: takeFromFourTypes.includes("written"),
 				showRomanized: takeFromFourTypes.includes("romanized"),
 				resetSpin: true,
+				singleWord: cData.singleWord,
 				noImage: cData.image == "-" ? true : false,
-			  size: cData.size ? cData.size : "2em",
+			  //size: cData.size ? cData.size : "2em",
 		};
 		
 		

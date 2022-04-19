@@ -40,11 +40,13 @@ const listnames = LectureData.map( d => Object.keys(d)[0] ); // <-----
 */
 
 function importAll(r) {
-  let images = [];
-  r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
-  return images;
+  let items = [];
+  r.keys().map((item, index) => { items[item.replace('./', '')] = r(item); });
+  return items;
 }
 const images = importAll(require.context('../images', false, /\.(png|jpe?g|svg)$/));
+const sounds = importAll(require.context('../audio/speech', false, /\.(mp3|ogg|mpeg)$/));
+
 
 const Lecture = ({ lectureState, lectureProgress, finished=0, prevProgress }) => {
 	
@@ -107,6 +109,17 @@ const Lecture = ({ lectureState, lectureProgress, finished=0, prevProgress }) =>
 		
 	}
 	*/
+	
+	/*
+	<Button 
+		className="howToSay"
+		style={{background: "#eeffee", right: "20px", top: "25px"}}
+		shape="circle" 
+		icon={<SoundTwoTone twoToneColor="#229900" />} 
+		//onClick={}
+	/>
+	*/
+	
 	
 	//let x = LectureData[lectureProgress];
 	//console.log(lecture.slides[0].image);

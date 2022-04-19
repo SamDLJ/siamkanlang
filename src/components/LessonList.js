@@ -8,7 +8,7 @@ import { LessonListData } from "../LessonListData";
 
 import useSound from "use-sound";
 //import a_ from '../sfx/a.m4a';
-import click from '../sfx/click.mp3';
+//import click from '../sfx/click.mp3';
 
 
 import '../App.css';
@@ -18,11 +18,18 @@ import '../App.css';
 const { Header, Sider, Content } = Layout;
 const { Step } = Steps;
 
+function importAll(r) {
+  let files = [];
+  r.keys().map((item, index) => { files[item.replace('./', '')] = r(item); });
+  return files;
+}
+
+const sounds = importAll(require.context('../audio/sfx', false, /\.(mp3|ogg|mpeg)$/));
 //const audio = new Audio('../sfx/a.m4a');
 
 const LessonList = ({ lessonState, lessonProgress }) => {
 	
-	const [play] = useSound(click);
+	const [play] = useSound(sounds['click']);
 	
 	//const [ currScreen, setScreen ] = useState("state-userlogin");
 	

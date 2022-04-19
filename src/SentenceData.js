@@ -13,7 +13,8 @@ export const SentenceData = [
 	    	written: [ "#ai" ],
 				romanized: [ "!kai" ],
 				english: [ "No." ],
-				image: ""
+				image: "",
+				audio: ["Ls0_000.mp3", ]
 			},
 			{
 				id: "001",
@@ -22,7 +23,7 @@ export const SentenceData = [
 	    	written: [ "mm $ieT al xder a", "$ieT ek !oua one'tesEm ex", "!e esEm sia" ],
 				romanized: [ "mm !tiett al xder a", "!tiett ek !qoua one't esEm ex", "!qe esEm sia" ],
 				english: [ "What do you think?", "I don't think we have to.", "Why not?" ],
-				
+				audio: ["Ls0_001_0.mp3", "Ls0_001_1.mp3", "Ls0_001_2.mp3"]
 			},
 			{
 				id: "002",

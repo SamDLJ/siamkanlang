@@ -8,19 +8,43 @@ import '../App.css';
 //audio.play();
 const { Header, Footer, Sider, Content } = Layout;
 
+
+
+function hashfunc(string) {
+	//set variable hash as 0
+	var hash = 0;
+	// if the length of the string is 0, return 0
+	if (string.length == 0) return hash;
+	
+	for (let i=0; i<string.length; i++)
+	{
+		let ch = string.charCodeAt(i);
+		hash = ((hash << 5) - hash) + ch;
+		hash = hash & hash;
+	}
+	
+	return hash;
+}
+
 const UserLogin = ({ loginState }) => {
 	
 	//const [ currScreen, setScreen ] = useState("state-userlogin");
 	
+	var namehash = "";
 	
 	const chooseLogin = (isLogin) => {
 		//console.log("UserLogin .chooseLogin() -> "+isLogin);
+		
+		//let xxx = hashfunc("marvin");
+		//console.log(xxx);
+		
 		loginState(isLogin);
 	}
 	
 	// --------- state-userlogin ------------
 	const onFinish = (values) => {
 	  console.log('Success:', values);
+		
 		
 		// check values in database manager
 		//setState("state-lessonlist");
@@ -29,6 +53,9 @@ const UserLogin = ({ loginState }) => {
 	const onFinishFailed = (errorInfo) => {
 	  console.log('Failed:', errorInfo);
 	};
+	
+	
+	
 	
 	return (
 		<div>

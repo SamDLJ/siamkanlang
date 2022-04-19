@@ -95,12 +95,13 @@ const FlashCard = ({ currCard, getNewCard }) => {
 							//"margin-left": "5px",
 							//"margin-top": "5px",
 							//"margin-bottom": "5px",
-							width: "250px",
+							width: currCard.singleWord ? "250px" : "auto",
 							//boxShadow: "5px 5px 5px #222222",
 							//background: "#efffef"
 						
 						}}
-				    title={currCard.showEnglish ? <h1 style={{fontSize: currCard.size, color: "#888800"}}>{currCard.english}</h1> : "-"}
+				    //title={currCard.showEnglish ? <h1 style={{fontSize: currCard.size, color: "#888800"}}>{currCard.english}</h1> : "-"}
+						title={currCard.showEnglish ? <h1 style={{fontSize: "1.5em", color: "#888800"}}>{currCard.english}</h1> : "-"}
 				    cover={<
 							img alt="" 
 							src={currCard.showImage ? images[currCard.image] : "" } 
