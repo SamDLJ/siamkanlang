@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/siamkanlang/static/css/main.8eda0911.css",
-    "main.js": "/siamkanlang/static/js/main.9f26b9b3.js",
+    "main.js": "/siamkanlang/static/js/main.6a906ae4.js",
     "static/js/845.ac83d832.chunk.js": "/siamkanlang/static/js/845.ac83d832.chunk.js",
     "static/js/787.76ecc9fa.chunk.js": "/siamkanlang/static/js/787.76ecc9fa.chunk.js",
     "static/media/Siamkan_Food.png": "/siamkanlang/static/media/Siamkan_Food.0ca311158754ce5d0ccb.png",
@@ -13,6 +13,7 @@
     "static/media/iato-sig.png": "/siamkanlang/static/media/iato-sig.b6cf8a351631494a75dc.png",
     "static/media/image-002.png": "/siamkanlang/static/media/image-002.9ef6a0d1b30843b0d6d9.png",
     "static/media/image-008.png": "/siamkanlang/static/media/image-008.d45a0ceb3502abfd5ed6.png",
+    "static/media/its-you.png": "/siamkanlang/static/media/its-you.749d2feb10a9a49b8508.png",
     "static/media/image-001.png": "/siamkanlang/static/media/image-001.8ee831212c3a43160195.png",
     "static/media/image-004.png": "/siamkanlang/static/media/image-004.1c6ab7fe1b764753cae3.png",
     "static/media/milren.png": "/siamkanlang/static/media/milren.268a6b0ec991913356a0.png",
@@ -26,12 +27,12 @@
     "static/media/click.mp3": "/siamkanlang/static/media/click.4c7217817c21a6bbd2b7.mp3",
     "index.html": "/siamkanlang/index.html",
     "main.8eda0911.css.map": "/siamkanlang/static/css/main.8eda0911.css.map",
-    "main.9f26b9b3.js.map": "/siamkanlang/static/js/main.9f26b9b3.js.map",
+    "main.6a906ae4.js.map": "/siamkanlang/static/js/main.6a906ae4.js.map",
     "845.ac83d832.chunk.js.map": "/siamkanlang/static/js/845.ac83d832.chunk.js.map",
     "787.76ecc9fa.chunk.js.map": "/siamkanlang/static/js/787.76ecc9fa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8eda0911.css",
-    "static/js/main.9f26b9b3.js"
+    "static/js/main.6a906ae4.js"
   ]
 }
