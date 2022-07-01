@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/siamkanlang/static/css/main.14ba2de2.css",
-    "main.js": "/siamkanlang/static/js/main.05e8b7c5.js",
+    "main.js": "/siamkanlang/static/js/main.2fc20796.js",
     "static/js/845.ac83d832.chunk.js": "/siamkanlang/static/js/845.ac83d832.chunk.js",
     "static/js/787.76ecc9fa.chunk.js": "/siamkanlang/static/js/787.76ecc9fa.chunk.js",
     "static/media/Siamkan_Food.png": "/siamkanlang/static/media/Siamkan_Food.0ca311158754ce5d0ccb.png",
@@ -35,12 +35,12 @@
     "static/media/why_is_the_fire_still_going.mp3": "/siamkanlang/static/media/why_is_the_fire_still_going.4c7217817c21a6bbd2b7.mp3",
     "index.html": "/siamkanlang/index.html",
     "main.14ba2de2.css.map": "/siamkanlang/static/css/main.14ba2de2.css.map",
-    "main.05e8b7c5.js.map": "/siamkanlang/static/js/main.05e8b7c5.js.map",
+    "main.2fc20796.js.map": "/siamkanlang/static/js/main.2fc20796.js.map",
     "845.ac83d832.chunk.js.map": "/siamkanlang/static/js/845.ac83d832.chunk.js.map",
     "787.76ecc9fa.chunk.js.map": "/siamkanlang/static/js/787.76ecc9fa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.14ba2de2.css",
-    "static/js/main.05e8b7c5.js"
+    "static/js/main.2fc20796.js"
   ]
 }
